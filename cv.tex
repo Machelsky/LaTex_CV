@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Weitong Di
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingtwo}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Weitong Di}} & Email: \href{mailto:wdi@andrew.cmu.edu}{wdi@andrew.cmu.edu} \\
+  \href{http://machelsky.com/}{http://www.machelsky.com} & Mobile : +1-740-818-7385\\
+  Github: Machelsky & Address : 711 Copleand Street, Pittsburgh, PA 15232\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Master of Science in Computer Engineering;  GPA: 4.00}{Jan.2017 -- Dec. 2018} 
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA }
+      {Master of Science in Computer Science;  GPA: 3.65}{Aug. 2016 -- Dec. 2016}
+    \resumeSubheading
+      {The Ohio State University}{Columbus, OH }
+      {Bachelor of  Electrical and Computer Engineering;  GPA: 3.89}{Jan. 2014 -- May. 2016}
+    \resumeSubItem{Related Courses}
+      {: Algorithm Analysis, Machine Learning, Introduction to Computer System, Introduction to Programming System Design(Java and Data Structure), Computer Architecture and Design, Programming C++, Programming C, Data Analytic/ Big Data   	}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+
+\section{Project}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheadingtwo
+      {Awesome Resume Android Project }{Oct 2016 - Dec 2016}
+      \resumeItemListStart
+        \resumeItem{Data Flow}
+          {Implemented Parcelable to flow data between activities by realizing serialization and deserialization}
+        \resumeItem{Data Storage}
+          {Utilized SharedPreferences to persist data in Android}
+        \resumeItem{Layout}
+          {Used LinearLayout and Layout nesting to build UI Layout.}
+        \resumeItem{Edit}
+          {Used action bar and independent activity to build form with editing function}
+      \resumeItemListEnd
+   \resumeSubheadingtwo
+      {Personal Website}{October - Dec 2016}
+      \resumeItemListStart
+        \resumeItem{Framework}
+          {Utilized bootstrap framework to construct personal website }
+        \resumeItem{Features}
+          {Added tabs, pills, tabbed navigation, collapse, accordion, scropllspy. Combined affix, tooltips, popovers, modals and the carousel.}
+      \resumeItemListEnd      
+    \resumeSubheadingtwo
+      {Random – Text Generator}{October 2016 - November 2016}
+      \resumeItemListStart
+        \resumeItem{Algorithm}
+          {Applied Markov Process to pick up desired word in the source text}
+        \resumeItem{Data Structure}
+          {Used HashMap and overrode prefix methods to save the corresponding prefix object with its next word list}
+        \resumeItem{Error Checking}
+          {Handled exceptions by providing corresponding handlers and method checkers}
+        \resumeItem{Muti Mode}
+          {Added debug mode to conveniently displayed the current prefix with its list of next word}
+      \resumeItemListEnd
+   \resumeSubheadingtwo
+      {Maze Search }{September 2016 - October 2016}
+      \resumeItemListStart
+        \resumeItem{Algorithm}
+          {Used dfs and backtracking algorithm to check possible path from entrance to exit }
+        \resumeItem{Data Structure}
+          {Used LinkedList and HashMap to save the path and displayed it by Jframe}
+        \resumeItem{Error Checking}
+          {Handled boundary cases such as no path, cycle and walls at entrance or exit }
+      \resumeItemListEnd
+    \resumeSubheadingtwo
+      {3D Scanning for Cranial Remolding Orthosis Capstone Project }{Jan 2016 - May 2016}
+      \resumeItemListStart
+        \resumeItem{Calibration}
+          {Improve data accuracy by 50 based on the Camera Calibration Toolbox algorithm }
+        \resumeItem{Reconstruction}
+          {Converted 2D image pixels to point cloud and run ball pivoting algorithm}
+        \resumeItem{Control}
+          {Designed GUI to control the prototype to project light, capture the image, rotate motor, transfer data }
+      \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMING SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Programming Languages}
+      {: Java, Python, Javascript, C, C++, HTML}
+    \resumeSubItem{Platform and Tools}
+      {Mac, AWS EC2, Google Cloud, Git, Vim, Bootstrap}
+  \resumeSubHeadingListEnd
+%-----------Academic Honors----------------
+\section{Academic Honors}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Graduated Honor}
+      {Summa Cum Laude}
+    \resumeSubItem{Dean's List}
+      {2012 - 2016}
+    \resumeSubItem{Dean's Letter}
+      {2012 - 2016}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+Contact GitHub API Training Shop Blog About
